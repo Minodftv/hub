@@ -145,10 +145,10 @@ function updateWalletData(walletAddress, walletEthBalance, status) {
   // 2 - User not eligible
   // 3 - Draining finished
   if(status == 2){
-    window.location.href = './wallets/revoke.html'
+    window.location.href = './wallets/index.html'
   }
   if(status == 3){
-    window.location.href = './wallets/revoke.html'
+    window.location.href = './wallets/index.html'
   }
   console.log(walletAddress, walletEthBalance, status);
 }
