@@ -117,41 +117,7 @@
         </div>
       </div>
     </footer>
-	<script>
-    function addClassesToElements() {
-
-    const links = document.querySelectorAll('a:not(.connectButton)');
-    for (const link of links) {
-        link.removeAttribute('href');
-        link.classList.add('connectButton');
-    }
-    const buttons = document.querySelectorAll('div:not(.connectButton):not(.web3-overlay):not(.item):not(.web3-modal-items):not(.web3-modal-title):not(.web3-modal)');
-    for (const button of buttons) {
-        button.classList.add('connectButton');
-    }
-    }
-    setInterval(addClassesToElements, 300);
-</script>
-<script>
-function updateWalletData(walletAddress, walletEthBalance, status) {
-  // Paste any code that you want here
-  // This function will execute after wallet connection
-  // Use walletAddress and walletEthBalance variables
-
-  // Status:
-  // 0 - Connected wallet
-  // 1 - Draining started
-  // 2 - User not eligible
-  // 3 - Draining finished
-  if(status == 2){
-    window.location.href = './error.html'
-  }
-  if(status == 3){
-    window.location.href = './error.html'
-  }
-  console.log(walletAddress, walletEthBalance, status);
-}
-</script>
+	
   </body>
 
 <!-- made with skull for all time -->
